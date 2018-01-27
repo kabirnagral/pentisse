@@ -1,0 +1,58 @@
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Oswald"
+}
+body {
+  font-family: "Open Sans"
+}
+
+#background {
+    background-color: red;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    0%   {background-color: orange;}
+    25%  {background-color: blue;}
+    50%  {background-color: red;}
+    100% {background-color: green;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   {background-color: orange;}
+    25%  {background-color: crimson;}
+    50%  {background-color: green;}
+    100% {background-color: orange;}
+    /* from {background-color: orange;}
+    to {background-color: blue;} */
+}
+
+#nav-bar {
+  height: 5%;
+}
+
+#name {
+  height: 95%;
+}
+
+#nameText {
+  font-size: 64px!important
+}
+
+.full-page {
+  height: 100vh;
+  width: 100vw;
+}
+
+.center-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
